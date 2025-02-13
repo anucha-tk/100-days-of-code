@@ -3,10 +3,13 @@ import random
 choices = ["rock", "paper", "scissors"]
 
 print("Welcome to Pic Pac Pok!")
-player = input("Choose rock, paper, or scissors: ").lower()
 
-if player not in choices:
-    raise ValueError("Invalid choice! Choose rock, paper, or scissors.")
+# Keep asking until player gives a valid choice
+while True:
+    player = input("Choose rock, paper, or scissors: ").lower()
+    if player in choices:
+        break
+    print("Invalid choice! Please choose rock, paper, or scissors.")
 
 computer = random.choice(choices)
 
