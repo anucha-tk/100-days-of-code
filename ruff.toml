@@ -1,0 +1,11 @@
+line-length = 88
+target-version = "py310"
+
+[lint]
+select = ["E", "F", "I"]   # Error, Pyflakes, Import sort
+ignore = ["E501"]          # ไม่เช็ค line ยาว (เพราะ format จัดให้)
+
+[format]
+indent-style = "space"
+quote-style = "double"
+line-ending = "lf"

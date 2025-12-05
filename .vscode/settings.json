@@ -1,0 +1,7 @@
+{
+  "python.linting.enabled": true,
+  "ruff.lint.enable": true,
+  "ruff.format.enable": true,
+  "editor.defaultFormatter": "charliermarsh.ruff",
+  "editor.formatOnSave": true
+}
